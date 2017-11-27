@@ -4,10 +4,14 @@ two tools for helping to record & play back a series of recordings of individual
 
 ## Installation
 
+Presuming you have `GOBIN` setup:
+
 ```
 go install github.com/saranrapjs/soundboard-tools/cmd/soundboard-rec
 go install github.com/saranrapjs/soundboard-tools/cmd/soundboard-play
 ```
+
+Or, feeling lazy like me, you can just run these via `go run` e.g. `go run cmd/soundboard-play/main.go` etc.
 
 This requires [sox](http://sox.sourceforge.net/); install on a Mac with `brew install sox`.
 
@@ -25,7 +29,7 @@ echo "rules" >> file-with-words.txt
 soundboard-rec file-with-words.txt
 ```
 
-## woundboard-play
+## soundboard-play
 
 Given a folder with wav files named in the pattern `word.wav`, play a string of text containing those words.
 
